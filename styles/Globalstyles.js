@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
     container:
     {
       flex:1,
-      height:'70%',
+      height:'80%',
       margin:'2%',
       alignItems:'center'
     },
@@ -46,7 +46,9 @@ export const styles = StyleSheet.create({
     {
       backgroundColor:'#ff6600',
       width:'80%',
+      height:'9%',
       alignItems:'center',
+      justifyContent:'center',
       borderRadius:10,
       margin:20,
       shadowColor: "#000",
@@ -59,12 +61,11 @@ export const styles = StyleSheet.create({
   
       elevation: 14,
       
-      
     },
     button:
     {
       fontSize:30,
-      fontFamily:Platform.OS==="android" ? 'CircularStd-Bold' : 'something.ttf'
+      fontFamily:Platform.OS==="android" ? 'CircularStd-Medium' : 'something.ttf'
     },
     icon:
     {
@@ -79,12 +80,12 @@ export const styles = StyleSheet.create({
     },
     additional:
     {
-      fontSize:17,fontFamily:Platform.OS==="android" ? 'CircularStd-Bold' : 'something.ttf'
+      fontSize:13,fontFamily:Platform.OS==="android" ? 'CircularStd-Bold' : 'something.ttf'
     },
     additionallink:
     {
 
-     fontSize:17,color:'#ff6600',fontFamily:Platform.OS==="android" ? 'CircularStd-Bold' : 'something.ttf'
+     fontSize:13,color:'#ff6600',fontFamily:Platform.OS==="android" ? 'CircularStd-Bold' : 'something.ttf'
     }
    
 

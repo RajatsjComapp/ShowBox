@@ -111,7 +111,7 @@ storeData=()=> {
             <Text style={styles.button}>Signup</Text>
           </TouchableOpacity>
           </View>
-          <View style={{width:'80%',flexDirection:"row",justifyContent:'center'}}>
+          <View style={{width:'80%',flexDirection:"row",justifyContent:'center',height:80}}>
             <Text style={styles.additional}>Already Have An Account?   </Text>
           <TouchableOpacity onPress={()=>{navigation.navigate('Login')}}>
             <Text style={styles.additionallink}>Login</Text>

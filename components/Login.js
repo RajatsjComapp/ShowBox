@@ -78,7 +78,7 @@ btnLoginTapped = () => {
             <Text style={styles.button}>Login</Text>
           </TouchableOpacity>
           </View>
-          <View style={{width:'80%',flexDirection:"row",justifyContent:'center'}}>
+          <View style={{width:'80%',flexDirection:"row",justifyContent:'center',height:100}}>
             <Text style={styles.additional} >Create An Account?   </Text>
           <TouchableOpacity onPress={()=>{navigation.navigate('Signup')}}>
             <Text style={styles.additionallink}>Signup</Text>

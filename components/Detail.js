@@ -6,7 +6,7 @@ import Display from '../Section/Display.js'
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Listing from '../Reusable/Listing.js';
 import Details from '../Reusable/Details';
-export default function Browse ({navigation})
+export default function Detail ({navigation})
 {
 
   return (
@@ -15,16 +15,16 @@ export default function Browse ({navigation})
       <View style={{flex:0.33}}>
         <View style={{flexDirection:'row',justifyContent:'space-between'}}>
         <Text style={styles.Heading}>Popular</Text> 
-      <TouchableOpacity onPress={()=>{navigation.navigate('Listing',PopularMovie)}}>
+      <TouchableOpacity onPress={()=>{navigation.navigate('Details')}}>
         <Text style={styles.Heading}>More</Text></TouchableOpacity>
         </View>
-      { <Display items={PopularMovie}/> }
+      { <Display items={PopularMovie}  /> }
     </View>
     <View style={{flex:0.33}}>
 
       <View style={{flexDirection:'row',justifyContent:'space-between'}}>
         <Text style={styles.Heading}>Trending Daily</Text> 
-        <TouchableOpacity onPress={()=>{navigation.navigate('Listing',DailyMovie)}}>
+        <TouchableOpacity onPress={()=>{navigation.navigate('Details')}}>
         <Text style={styles.Heading}>More</Text></TouchableOpacity>
         </View>
         { <Display items={DailyMovie}  /> }
